@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/login_fragment_bg"
+    >
+
+    <TextView
+        android:id="@+id/login_id_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_id_label_txt"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/login_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/login_id_label"
+        android:layout_alignLeft="@id/login_password"
+        android:hint="@string/login_id_hint_txt"
+        />
+
+    <TextView
+        android:id="@+id/login_password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_id_label"
+        android:layout_marginTop="32dp"
+        android:text="@string/login_password_label_txt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/login_password_label"
+        android:layout_toRightOf="@id/login_password_label"
+        android:layout_toLeftOf="@id/login_show_password"
+        android:layout_marginLeft="8dp"
+        android:hint="@string/login_password_hint_txt"
+        android:inputType="textPassword"
+        />
+
+    <ImageButton
+        android:id="@+id/login_show_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/login_password"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/login_show_password_icon"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:id="@+id/login_submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_password_label"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/login_submit_btn_label"
+        />
+
+
+</RelativeLayout>

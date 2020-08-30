@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="textColor">#ffffff</color>
+    <color name="nav_background_color">#ff9933</color>
+    <color name="list_fragment_bg_gradient_start">#0099f7</color>
+    <color name="list_fragment_bg_gradient_end">#f11712</color>
+    <color name="list_fragment_nav_bg_gradient_start">#0575e6</color>
+    <color name="list_fragment_nav_bg_gradient_end">#021b79</color>
+    <color name="login_fragment_bg_gradient_start">#00b09b</color>
+    <color name="login_fragment_bg_gradient_end">#96c93d</color>
+    <color name="login_fragment_nav_bg_gradient_start">#833ab4</color>
+    <color name="login_fragment_nav_bg_gradient_center">#fd1d1d</color>
+    <color name="login_fragment_nav_bg_gradient_end">#fcb045</color>
+    <color name="hw_fragment_bg_gradient_start">#780206</color>
+    <color name="hw_fragment_bg_gradient_end">#061161</color>
+    <color name="hw_fragment_nav_bg_gradient_start">#ff0084</color>
+    <color name="hw_fragment_nav_bg_gradient_end">#33001b</color>
+</resources>

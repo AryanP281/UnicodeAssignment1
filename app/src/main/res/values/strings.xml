@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">UnicodeAssignment1</string>
+    <string name="fragment_list_menuitem_title">List</string>
+    <string name="login_btn_text">Login Page</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="fragment_login_menuitem_title">Login</string>
+    <string name="login_id_label_txt">Id:</string>
+    <string name="login_id_hint_txt">Enter Login Id</string>
+    <string name="login_password_label_txt">Password:</string>
+    <string name="login_password_hint_txt">Enter Password</string>
+    <string name="login_submit_btn_label">Submit</string>
+    <string name="fragment_color_menuitem_title">Hello World</string>
+    <string name="set_color_picker_fragment_color_btn_label">Set Color Fragment color</string>
+</resources>
