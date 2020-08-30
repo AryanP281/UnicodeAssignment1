@@ -1,6 +1,7 @@
 package com.example.unicodeassignment1
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +25,19 @@ class LoginActivity : AppCompatActivity()
             if(views == null)
                 Toast.makeText(this@LoginActivity, "Invalid Credentials", Toast.LENGTH_SHORT).show();
             else
-                Toast.makeText(this@LoginActivity, "Welcome ${(views[0] as EditText).text.toString().trim()} !", Toast.LENGTH_SHORT).show();
+            {
+                val id : String = (views[0] as EditText).text.toString(); //Getting the entered id
+                val password : String = (views[1] as EditText).text.toString(); //Getting the entered password
+
+                //Saving the id and password
+                val sharedPref : SharedPreferences = getPreferences(Context.MODE_PRIVATE);
+                val prefEditor : SharedPreferences.Editor = sharedPref.edit();
+                prefEditor.putString(USERNAME_BUNDLE_KEY, id); //Saving the id
+                prefEditor.putString(PASSWORD_BUNDLE_KEY, password); //Saving the password
+                prefEditor.apply(); //Saving the changes
+
+                Toast.makeText(this@LoginActivity, "Welcome $id !", Toast.LENGTH_SHORT).show();
+            }
         }
 
         private fun validInput() : Array<View?>?
